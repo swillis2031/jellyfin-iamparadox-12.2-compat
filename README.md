@@ -1,0 +1,1 @@
+# jellyfin-iamparadox-12.2-compat
