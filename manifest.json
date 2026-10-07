@@ -1,0 +1,112 @@
+[
+  {
+    "guid": "fbacd0b6-fd46-4a05-b0a4-2045d6a135b0",
+    "name": "Custom Tabs",
+    "overview": null,
+    "description": "Adds support for custom tabs to be added to the Jellyfin webpage. Commonly used to add Requests tab.",
+    "owner": "IAmParadox27",
+    "category": "General",
+    "imageUrl": "https://raw.githubusercontent.com/IAmParadox27/jellyfin-plugin-custom-tabs/main/src/logo.png",
+    "versions": [
+      {
+        "version": "0.3.1.0",
+        "changelog": "UNOFFICIAL TEMPORARY JELLYFIN 12.2 COMPATIBILITY ALIAS. This is the developer's official Jellyfin 12.1 binary, presented to Jellyfin as compatible with 12.2. It has NOT been rebuilt for 12.2.\n\nPatch to make work on 12.1.0 as released on 12.0.1 (which doesn't exist) by accident. If you're not on 12.1.0 this is exactly the same version as 0.3.0.0",
+        "targetAbi": "12.2.0.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-custom-tabs/releases/download/0.3.1.0/Release-12.1.0.zip",
+        "checksum": "3F4464FB4EB11F1D9F48CF6D06460BC2",
+        "timestamp": "2026-09-21T10:32:00",
+        "dependencies": [
+          "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
+        ]
+      }
+    ]
+  },
+  {
+    "guid": "5e87cc92-571a-4d8d-8d98-d2d4147f9f90",
+    "name": "File Transformation",
+    "overview": null,
+    "description": "Adds support for plugins to change jellyfin-web content without actually modifying the files directly but intercepts the requests for the served data.",
+    "owner": "IAmParadox27",
+    "category": "General",
+    "imageUrl": "https://raw.githubusercontent.com/IAmParadox27/jellyfin-plugin-file-transformation/main/src/logo.png",
+    "versions": [
+      {
+        "version": "3.0.1.0",
+        "changelog": "UNOFFICIAL TEMPORARY JELLYFIN 12.2 COMPATIBILITY ALIAS. This is the developer's official Jellyfin 12.1 binary, presented to Jellyfin as compatible with 12.2. It has NOT been rebuilt for 12.2.\n\nAdd support for 12.1",
+        "targetAbi": "12.2.0.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-file-transformation/releases/download/3.0.1.0/Release-12.1.0.zip",
+        "checksum": "1451642C8DC6F036CB00AA703A9F0834",
+        "timestamp": "2026-09-08T09:02:53",
+        "dependencies": [
+          "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
+        ]
+      }
+    ]
+  },
+  {
+    "guid": "08f615ea-2107-4f04-89cc-091035f54448",
+    "name": "Media Bar",
+    "overview": null,
+    "description": "Adds a media bar element at the top of the homepage on Jellyfin web",
+    "owner": "IAmParadox27 & M0RPH3US",
+    "category": "General",
+    "imageUrl": "https://raw.githubusercontent.com/IAmParadox27/jellyfin-plugin-media-bar/main/src/logo.png",
+    "versions": [
+      {
+        "version": "3.0.0.0",
+        "changelog": "UNOFFICIAL TEMPORARY JELLYFIN 12.2 COMPATIBILITY ALIAS. This is the developer's official Jellyfin 12.1 binary, presented to Jellyfin as compatible with 12.2. It has NOT been rebuilt for 12.2.\n\n# 🎬 Media Bar Arrives on Jellyfin 12\r\n\r\nMedia Bar **3.0.0.0** brings support for **Jellyfin 12**, including compatibility with both the classic desktop experience and Jellyfin's newer modern web layout.\r\n\r\n> ## 🙌 Huge thanks to MakD and the upstream contributors\r\n>\r\n> Media Bar itself is the work of **MakD and the contributors to the upstream Media Bar project**. The plugin I maintain is primarily a Jellyfin wrapper around that work, exposing configuration and integration points so it can be installed and managed cleanly as a Jellyfin plugin.\r\n>\r\n> A huge amount of effort has gone into keeping Media Bar working across Jellyfin's changing web interface, especially for Jellyfin 12. The features, UI work and frontend improvements in this release are built on that upstream work, and the credit for that belongs to **MakD and everyone contributing there**.\r\n>\r\n> My part is largely packaging, integrating and exposing that work through Jellyfin's plugin system.\r\n\r\n## ✨ New Features\r\n\r\n* Added support for **Jellyfin 12**.\r\n* Added support for Jellyfin 12's **modern React/MUI home screen layout**, alongside the existing classic desktop layout.\r\n* Updated the bundled Media Bar frontend to the latest Jellyfin 12-compatible upstream version.\r\n* Added Jellyfin 12-specific styling so Media Bar integrates correctly with the new web-client shell while retaining the existing appearance on the classic layout.\r\n* Media Bar continues to ship its frontend assets directly with the plugin, ensuring the version displayed in Jellyfin matches the plugin version you've installed.\r\n\r\n## 🛠️ Improvements\r\n\r\n* Synced Media Bar with the latest Jellyfin 12-compatible upstream work.\r\n* Improved Media Bar placement within the Jellyfin 12 home screen across both supported layouts.\r\n* Improved layout behaviour on taller displays, ensuring Jellyfin's home-screen rows remain below the Media Bar content rather than overlapping its controls.\r\n* Improved localisation handling when loading Jellyfin's translation chunks.\r\n* Retained support for the **Get updates early** option for users who explicitly want to track unreleased upstream Media Bar changes.\r\n\r\n## 🪲 Bug Fixes\r\n\r\n* Fixed Media Bar being inserted in the wrong position when using Jellyfin 12's modern layout (#181).\r\n* Fixed translated Media Bar strings falling back to English or producing JSON decoding errors for some languages (#185).\r\n* Fixed home-screen rows overlapping Media Bar buttons on taller viewports.\r\n* Fixed Jellyfin 12 layout differences that could cause Media Bar to render incorrectly compared with Jellyfin 10.11.\r\n\r\n## ⚠️ Compatibility\r\n\r\n* **Media Bar 3.0.0.0 supports Jellyfin 10.11.11 and Jellyfin 12.**\r\n* Users on older Jellyfin 10.x versions should remain on a compatible **2.x** Media Bar release.\r\n* Jellyfin 12 support includes both the **classic Desktop layout** and the newer **modern React/MUI layout**.\r\n* A compatible **File Transformation 3.x** release is required.\r\n* If you're using the **Get updates early** option, unreleased upstream Media Bar changes may behave differently from the frontend bundled and tested with this plugin release.\r\n\r\n## Contributors\r\n\r\n* austinnorgaard\r\n* judarange\r\n\r\n## ❤️ Support\r\n\r\nIf you enjoy using my Jellyfin plugins and want to support the time that goes into building, maintaining, and improving them, you can do so on [Ko-fi](https://ko-fi.com/IAmParadox27).\r\n\r\nThank you for using the plugins and being part of the community.",
+        "targetAbi": "12.2.0.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-media-bar/releases/download/3.0.0.0/Release-12.1.0.zip",
+        "checksum": "FD60F661B8D1448EB2311240D8044154",
+        "timestamp": "2026-09-15T20:41:11",
+        "dependencies": [
+          "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
+        ]
+      }
+    ]
+  },
+  {
+    "guid": "5b6550fa-a014-4f4c-8a2c-59a43680ac6d",
+    "name": "Plugin Pages",
+    "overview": null,
+    "description": "Adds support for plugins to define their own user settings pages, rather than just admin sided.",
+    "owner": "IAmParadox27",
+    "category": "General",
+    "imageUrl": "https://raw.githubusercontent.com/IAmParadox27/jellyfin-plugin-pages/main/src/logo.png",
+    "versions": [
+      {
+        "version": "3.0.1.0",
+        "changelog": "UNOFFICIAL TEMPORARY JELLYFIN 12.2 COMPATIBILITY ALIAS. This is the developer's official Jellyfin 12.1 binary, presented to Jellyfin as compatible with 12.2. It has NOT been rebuilt for 12.2.\n\n## 🪲 Bug Fixes\r\n\r\n* Fixed injected menu items not closing the Jellyfin user-menu popover after navigation (PR #20, @n00bcodr).\r\n* Fixed Plugin Pages injection sometimes failing on clients where jQuery had not finished loading, including affected Android clients (PR #20, @n00bcodr).\r\n* Added cache-busting to the injected script so clients reliably receive updated versions.\r\n\r\n## ⚠️ Compatibility\r\n\r\n* Dropped support for Jellyfin 10.11 releases prior to 10.11.11. Jellyfin 10.11.11 remains supported.\r\n\r\n### Contributors\r\n\r\n* n00bcodr",
+        "targetAbi": "12.2.0.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-pages/releases/download/3.0.1.0/Release-12.1.0.zip",
+        "checksum": "F74C03CED8C78112893E0D31EF4B649E",
+        "timestamp": "2026-09-15T10:18:14",
+        "dependencies": [
+          "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
+        ]
+      }
+    ]
+  },
+  {
+    "guid": "b8298e01-2697-407a-b44d-aa8dc795e850",
+    "name": "Home Screen Sections",
+    "overview": null,
+    "description": "Adds support for server provided home screen sections",
+    "owner": "IAmParadox27",
+    "category": "General",
+    "imageUrl": "https://raw.githubusercontent.com/IAmParadox27/jellyfin-plugin-home-sections/main/src/logo.png",
+    "versions": [
+      {
+        "version": "3.0.2.0",
+        "changelog": "UNOFFICIAL TEMPORARY JELLYFIN 12.2 COMPATIBILITY ALIAS. This is the developer's official Jellyfin 12.1 binary, presented to Jellyfin as compatible with 12.2. It has NOT been rebuilt for 12.2.\n\nFixed issue caused by 3.0.1.0 on JF 12.1. \r\n\r\nThat release has been removed - this is identical to 3.0.1.0 except with this fix",
+        "targetAbi": "12.2.0.0",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-home-sections/releases/download/3.0.2.0/Release-12.1.0.zip",
+        "checksum": "C71A9BBF5456A377F14D9653CA41DB99",
+        "timestamp": "2026-09-15T11:27:53",
+        "dependencies": [
+          "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
+        ]
+      }
+    ]
+  }
+]
