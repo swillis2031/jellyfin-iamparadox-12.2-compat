@@ -2,19 +2,19 @@
   {
     "guid": "fbacd0b6-fd46-4a05-b0a4-2045d6a135b0",
     "name": "Custom Tabs",
-    "overview": null,
+    "overview": "Adds support for custom tabs to be added to the Jellyfin webpage. Commonly used to add Requests tab.",
     "description": "Adds support for custom tabs to be added to the Jellyfin webpage. Commonly used to add Requests tab.",
     "owner": "IAmParadox27",
     "category": "General",
     "imageUrl": "https://raw.githubusercontent.com/IAmParadox27/jellyfin-plugin-custom-tabs/main/src/logo.png",
     "versions": [
       {
-        "version": "0.3.2.0",
-        "changelog": "Added support for 12.2",
+        "version": "0.3.3.0",
+        "changelog": "Added support for 12.3 and 12.4\r\nFixed issue with tabs appearing to logged out (guest) users (PR #73, @S2ciOnur)",
         "targetAbi": "12.2.0.0",
-        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-custom-tabs/releases/download/0.3.2.0/Release-12.2.0.zip",
-        "checksum": "DAC56E534AD74FAA2A92F428DBCA4231",
-        "timestamp": "2026-10-05T21:36:57",
+        "sourceUrl": "https://github.com/IAmParadox27/jellyfin-plugin-custom-tabs/releases/download/0.3.3.0/Release-12.2.0.zip",
+        "checksum": "5BDB7BD8BD82CA79925320A0980B2C16",
+        "timestamp": "2026-10-30T10:13:16",
         "dependencies": [
           "5e87cc92-571a-4d8d-8d98-d2d4147f9f90"
         ]
@@ -24,7 +24,7 @@
   {
     "guid": "5e87cc92-571a-4d8d-8d98-d2d4147f9f90",
     "name": "File Transformation",
-    "overview": null,
+    "overview": "Adds support for plugins to change jellyfin-web content without actually modifying the files directly but intercepts the requests for the served data.",
     "description": "Adds support for plugins to change jellyfin-web content without actually modifying the files directly but intercepts the requests for the served data.",
     "owner": "IAmParadox27",
     "category": "General",
@@ -46,7 +46,7 @@
   {
     "guid": "08f615ea-2107-4f04-89cc-091035f54448",
     "name": "Media Bar",
-    "overview": null,
+    "overview": "Adds a media bar element at the top of the homepage on Jellyfin web",
     "description": "Adds a media bar element at the top of the homepage on Jellyfin web",
     "owner": "IAmParadox27 & M0RPH3US",
     "category": "General",
@@ -68,7 +68,7 @@
   {
     "guid": "5b6550fa-a014-4f4c-8a2c-59a43680ac6d",
     "name": "Plugin Pages",
-    "overview": null,
+    "overview": "Adds support for plugins to define their own user settings pages, rather than just admin sided.",
     "description": "Adds support for plugins to define their own user settings pages, rather than just admin sided.",
     "owner": "IAmParadox27",
     "category": "General",
@@ -90,7 +90,7 @@
   {
     "guid": "b8298e01-2697-407a-b44d-aa8dc795e850",
     "name": "Home Screen Sections",
-    "overview": null,
+    "overview": "Adds support for server provided home screen sections",
     "description": "Adds support for server provided home screen sections",
     "owner": "IAmParadox27",
     "category": "General",
